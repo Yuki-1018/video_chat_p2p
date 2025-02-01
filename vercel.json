@@ -1,5 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/api/socket", "destination": "/api/socket.js" }
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/socket",
+      "dest": "/api/socket.js"
+    }
+  ],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
   ]
 }
